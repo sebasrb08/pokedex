@@ -45,8 +45,8 @@ export default {
             }
         },
         busqueda() {
-            this.response.forEach(element => {
-                if(element.name==this.search){
+            this.response.forEach(elements => {
+                if(elements.name==this.search){
                 this.$router.push(`/${this.search}`)
             }
 
