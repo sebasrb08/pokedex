@@ -63,8 +63,7 @@ export default{
           console.log(this.response)
           this.urll=this.response.sprites.other.dream_world.front_default
           this.sprite=this.response.sprites
-          this.sprite
-          console.log(this.sprite)
+
         },
   }
 }
@@ -109,7 +108,7 @@ export default{
   width: 70%;
   height: 50%;
   display: flex;
-  border: rgb(77, 77, 77) 4px dashed;
+  border: rgb(77, 77, 77) 4px solid;
   border-radius: 10px;
   box-shadow: 0px 10px 10px black;
 
