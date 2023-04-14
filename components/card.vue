@@ -1,6 +1,9 @@
 <template>
         <NuxtLink :to="nombre">   
             <div class="card__contenedor">
+                <div class="card__id">
+                    <span>#{{ id }}</span>
+                </div>
                 <div class="card__img">
                     <img :src="url" alt="">
                 </div>
@@ -22,6 +25,10 @@ export default {
         url:{
             type:String,
             required:true
+        },
+        id:{
+            type:Number,
+            required:true
         }
     }
   
@@ -35,7 +42,8 @@ export default {
 .card__contenedor{
     height: 100%;
     width: 100%;
-    background-color: rgba(245, 116, 30, 0.836);
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 17%, rgba(245,51,48,1) 87%);
     font-size: 30px;
     color: white;
     display: flex;
@@ -44,23 +52,22 @@ export default {
     
     border-radius: 10px;
     box-shadow: 0px 10px 10px rgb(0, 0, 0);
-    border: solid 5px white;
-    animation-name:cardss ;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+    border: solid 5px MidnightBlue	;
 
 }
-@keyframes cardss{
-    0%   {background-color: rgba(245, 116, 30, 0.836); left:0px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  100% {background-color: rgba(245, 116, 30, 0.836); left:0px; top:0px;}
-}
+
 h4{
     font-size: 40px;
     font-weight: 500;
 }
+.card__id{
+width: 100%;
+height: 10%;
+color: black;
+opacity: 0.5;
+}
 .card__img{
-    height: 80%;
+    height: 70%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -70,10 +77,11 @@ h4{
     height: 20%;
     display: flex;
     align-items: center;
+    color: black;
 }
 img{
-    height: 60%;
-    width: 60%;
+    height: 200px;
+    width: 100px;
 }
 
 </style>

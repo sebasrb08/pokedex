@@ -1,5 +1,5 @@
 <template>
-  <div class="contenedor">
+  <div class="conten2">
     <div class="titulo">
       <h1>{{ nombre }}</h1>
     </div>
@@ -73,7 +73,7 @@ export default{
 
 
 <style>
-.contenedor{
+.conten2{
   height: 100%;
   width: 100%;
   background-color: rgb(133, 174, 250);
@@ -87,7 +87,7 @@ export default{
   justify-content: center;
   align-items: center;
   font-size: 60px;
-  color: white;
+  color: black;
   box-shadow: 0px 10px 10px black;
   font-weight: 800;
 
