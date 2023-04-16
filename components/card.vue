@@ -1,6 +1,6 @@
 <template>
         <NuxtLink :to="nombre">   
-            <div class="card__contenedor">
+            <div class="card__contenedor"  >
                 <div class="card__id">
                     <span>#{{ id }}</span>
                 </div>
@@ -17,6 +17,7 @@
 <script>
 export default {
     name:'CardPage',
+
     props:{
         nombre:{
             type:String,
@@ -29,10 +30,15 @@ export default {
         id:{
             type:Number,
             required:true
-        }
-    }
+        },
+     
+
+    },
   
-}
+    }
+   
+
+
 
 </script>
 
@@ -42,19 +48,18 @@ export default {
 .card__contenedor{
     height: 100%;
     width: 100%;
-    background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 17%, rgba(245,51,48,1) 87%);
     font-size: 30px;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    background-color: rgb(235, 232, 232);
     border-radius: 10px;
     box-shadow: 0px 10px 10px rgb(0, 0, 0);
     border: solid 5px MidnightBlue	;
 
 }
+
 
 h4{
     font-size: 40px;
@@ -73,6 +78,7 @@ opacity: 0.5;
     align-items: center;
     justify-content: center;
 }
+
 .card__text{
     height: 20%;
     display: flex;
@@ -83,5 +89,6 @@ img{
     height: 200px;
     width: 100px;
 }
+
 
 </style>
