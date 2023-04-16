@@ -183,23 +183,17 @@ export default {
 
 }
 .buscar{
-    width: 20%;
+    width: 30%;
     border-radius: 50px;
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px;
 }
-input {
-    width: 20%;
-    border: solid black 3px;
-    font-size: 25px;
-}
+
 .card__conten {
     height: 70%;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px;
     margin-top: 10px;
     transition-duration: 3s;
     animation-duration: 1s;
@@ -219,16 +213,10 @@ input {
     transition-duration: 1s;
     animation-duration: 2s;
     animation-name:slider ;
+
+    
 }
 
-.card__boton{
-    height: 15%;
-    width: 100%;
-    margin-top: 25px;
-    display: flex;
-    gap: 20px;
-
-}
 .boton__left{
     height: 100%;
     width: 5%;
@@ -243,7 +231,7 @@ input {
 }
 .card__boton--atras{
     left: 0;
-    top: 300px;
+    top: 250px;
     position: fixed;
     opacity: 0.5;
 
@@ -255,7 +243,7 @@ input {
 .card__boton--siguiente{
     position: fixed;
     right: 0;
-    top: 300px;
+    top: 250px;
     opacity: 0.5;
     cursor: pointer;
 }

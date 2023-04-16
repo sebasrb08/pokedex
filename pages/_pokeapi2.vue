@@ -194,7 +194,7 @@ export default{
 }
 
 .stats__title{
-  font-size: 80px;
+  font-size: 60px;
   color: white;
   font-weight: 700;
   
@@ -205,9 +205,8 @@ export default{
   border: solid 1px;
 }
 .stats__text{
-  font-size: 30px;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   display: flex;
   justify-content: space-between;
   gap: 8rem;
@@ -249,8 +248,12 @@ export default{
   width: 100%;
 }
 .devolver__flecha{
-  position: fixed;
-  top: 300px;
+  height: 10%;
+  width: 10%;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  opacity: 0.5;
   cursor: pointer;
 
 }

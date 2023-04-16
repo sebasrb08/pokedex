@@ -46,7 +46,7 @@ export default {
 <style>
 
 .card__contenedor{
-    height: 100%;
+    height: 80%;
     width: 100%;
     font-size: 30px;
     color: white;
@@ -56,7 +56,7 @@ export default {
     background-color: rgb(235, 232, 232);
     border-radius: 10px;
     box-shadow: 0px 10px 10px rgb(0, 0, 0);
-    border: solid 5px MidnightBlue	;
+    border: solid 3px rgb(185, 185, 185)	;
 
 }
 
